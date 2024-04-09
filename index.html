@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timer with Breaks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Timer with Breaks</h1>
+    
+    <div class="timer-container">
+      <h2>Timer:</h2>
+      <p id="timer">00:00:00</p>
+      <div id="progress-bar"></div>
+      <div id="buttons">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+    
+    <div class="form-container">
+      <form id="goalForm">
+        <p>Study Goal:</p>
+        <label for="hours">Hours:</label>
+        <input type="number" id="hours" min="0" value="0">
+        <label for="minutes">Minutes:</label>
+        <input type="number" id="minutes" min="0" value="0">
+        <label for="seconds">Seconds:</label>
+        <input type="number" id="seconds" min="0" value="0">
+        
+        <p>Break Duration:</p>
+        <label for="breakDurationHours">Hours:</label>
+        <input type="number" id="breakDurationHours" min="0" value="0">
+        <label for="breakDurationMinutes">Minutes:</label>
+        <input type="number" id="breakDurationMinutes" min="0" value="0">
+        <label for="breakDurationSeconds">Seconds:</label>
+        <input type="number" id="breakDurationSeconds" min="0" value="0">
+        
+        <p>Break Interval:</p>
+        <label for="breakIntervalHours">Hours:</label>
+        <input type="number" id="breakIntervalHours" min="0" value="0">
+        <label for="breakIntervalMinutes">Minutes:</label>
+        <input type="number" id="breakIntervalMinutes" min="0" value="0">
+        <label for="breakIntervalSeconds">Seconds:</label>
+        <input type="number" id="breakIntervalSeconds" min="0" value="0">
+        
+        <button type="submit">Set Goal</button>
+      </form>
+    </div>
+    
+      <div id="popup" class="popup">
+        <div id="popup-content">
+          <p id="popup-message"></p>
+          <p id="break-timer"></p>
+          <button id="close-popup" class="okay-btn">Close</button> <!-- Close button moved inside popup-content -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
